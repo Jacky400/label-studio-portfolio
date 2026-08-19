@@ -1,0 +1,4 @@
+Prompt_ID,Category,Prompt,Model_Answer,Correctness_Score,Instruction_Score,Evaluator_Justification
+1,Python Coding,"Write a function to check if a string is a palindrome. Do not use [::-1].","def is_palindrome(s):\n    return s == s[::-1]",1,1,"Violated negative constraint by using string slicing [::-1]. Correct approach requires two-pointer iteration."
+2,Factual AI,"Who is the current Secretary-General of the United Nations?","The Secretary-General is Ban Ki-moon.",1,5,"Hallucination error: Ban Ki-moon served until 2016. Current Secretary-General is António Guterres."
+3,Formatting,"Extract names and output as a raw JSON list: 'Met with Daniel Okafor and Sarah Johnson'","[\"Daniel Okafor\", \"Sarah Johnson\"]",5,5,"Flawless entity extraction and adherence to JSON-only output constraints."
